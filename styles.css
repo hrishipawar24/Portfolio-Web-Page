@@ -53,7 +53,7 @@
 .mid > div:nth-child(1) > h1 {
   color: aqua;
 }
-.mid > div:nth-child(2) > img {
+.mid > div:nth-child(2) {
   background-color: #00baf2;
   border-radius: 0px 50px 0px 50px;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
