@@ -3,11 +3,78 @@
   padding: 0;
   font-family: sans-serif;
 }
-.hero {
+/* <!-- give height and with only to childs. Parent will auto adjust themselves--> */
+#main {
+  padding: 0px 50px 50px 50px;
+  background-color: #00baf2;
+}
+.head {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 100px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  background-color: #00baf2;
+  border-radius: 0px 0px 50px 50px;
+}
+.head > div:nth-child(1) {
+  background-color: #0f4a8a;
+  border-radius: 0px 50px 0px 50px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.head > div:nth-child(2) {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.head a {
+  color: white;
+  background-color: #0f4a8a;
+  border: 0px;
+  border-radius: 0px 30px 0px 30px;
+  padding: 034px 34px 34px 34px;
+}
+.head img {
+  width: 70%;
+}
+.mid {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  background-color: #0f4a8a;
+  border-radius: 50px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.mid > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.mid > div:nth-child(1) > h1 {
+  color: aqua;
+}
+.mid > div:nth-child(2) {
+  background-color: #00baf2;
+  border-radius: 0px 50px 0px 50px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.mid button {
+  height: 10%;
+  width: 50%;
+  border-radius: 50px;
+  border: 0px;
+  color: #0f4a8a;
+}
+
+/* I reduced Number of lines code is now optimal */
+
+/* Your code -> */
+/* .hero {
   position: relative;
   width: 100%;
   height: 100%;
   background-color: rgb(255, 255, 255);
+  border: 1px solid red;
 }
 nav {
   display: flex;
@@ -16,66 +83,74 @@ nav {
   padding: 20px 0;
   align-items: center;
   justify-content: space-between;
+  border: 1px solid red;
 }
-nav ul li {
+/* <!-- instead of multiple descendant selector use div's with child selector --> */
+/* nav ul li {
   display: inline-block;
   list-style: none;
   margin: 10px 20px;
+  border: 1px solid red;
 }
 nav ul li a {
   text-decoration: none;
   color: #000;
   font-weight: bold;
+  border: 1px solid red;
 }
 nav ul li a:hour {
   color: red;
+  border: 1px solid red;
 }
-.details{
-    margin-left: 8%;
-    margin-top: 13%;
-
+.details {
+  margin-left: 8%;
+  margin-top: 13%;
+  border: 1px solid red;
 }
-.details h1{
-    font-size: 50px;
-    color: #000;
-    margin-bottom: 20px;
+.details h1 {
+  font-size: 50px;
+  color: #000;
+  margin-bottom: 20px;
+  border: 1px solid red;
 }
-span{
-    color: orange;
+span {
+  color: orange;
+  border: 1px solid red;
 }
-.details{
-    color: #555;
-    line-height: 22px;
+.details {
+  color: #555;
+  line-height: 22px;
+  border: 1px solid red;
 }
-.details a{
-    background: #212121;
-    padding: 10px 18px;
-    text-decoration: none;
-    font-weight: bold;
-    color:#fff;
-    display: inline-block;
-    margin: 30px;
-    border-radius: 5px;
+.details a {
+  background: #212121;
+  padding: 10px 18px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+  margin: 30px;
+  border-radius: 5px;
 }
-.images{
-    width: 45%;
-    height: 80%;
-    position: absolute;
-    bottom: 0;
-    right: 100px;
+.images {
+  width: 45%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
 }
-.images img{
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    transition: bottom 1s, left 1s;
+.images img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
 }
-.image:hover .shape{
-    bottom: 40px;
+.image:hover .shape {
+  bottom: 40px;
 }
-.image:hover .boy{
-    bottom: 40px;
-    left: 45%;
-}
+.image:hover .boy {
+  bottom: 40px;
+  left: 45%;
+} */
