@@ -8,34 +8,41 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="hero">
-      <nav>
-        <img
-          src="portfolio.png"
-          alt="Error"
-          class="logo"
-          width="300"
-          height="100"
-        />
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="details">
-        <h1>I am Hrishikesh Pawar <span>Developer</span></h1>
-        <p>
-          This is my Portfolio Web-site to showes all <br />Details and work
-          experence about web development.
-        </p>
-        <a href="#">Download CV</a>
+    <!-- Stop!! Using Inline-Styling -->
+    <!-- Try to divide Your Page into Sectios -->
+    <div id="main">
+      <!-- head-section -->
+      <div class="head">
+        <!-- instead of nav start using div's more -->
+        <!-- reduce unnessary stuff with img use width and border radius only -->
+        <div>
+          <h1><img src="/portfolio.png" /></h1>
+        </div>
+        <!-- instead of ul use div's with flex to justify content-->
+        <div>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </div>
       </div>
-      <div class="images">
-        <img src="new3.jpg" alt="" class="Shape" width="300px" height="200px" />
-        <img src="hrishibg.png" alt="" class="boy" />
+      <!-- mid-section -->
+      <div class="mid">
+        <!-- use nth child here -->
+        <div>
+          <h1>I am Hrishikesh Pawar Developer</h1>
+          <p>
+            This is my Portfolio Web-site to showes all <br />Details and work
+            experence about web development.
+          </p>
+          <button><a href="">Download CV </a></button>
+        </div>
+        <!-- instead of <a> use button-->
+        <div>
+          <!-- instead of two image it is better to used one image with gradient-->
+          <img src="hrishibg.png" alt="" class="boy" />
+        </div>
       </div>
     </div>
   </body>
